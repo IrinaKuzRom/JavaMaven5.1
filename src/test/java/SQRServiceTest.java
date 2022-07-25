@@ -10,10 +10,10 @@ public class SQRServiceTest {
    // @CsvSource({})
     @CsvFileSource(files = "src/test/resources/bonus.csv")
     //@Test
-    public void shouldCalcExact(int expected, int bottom_border,int top_border){
+    public void shouldCalcExact(int expected, int bottomBorder,int topBorder){
         SQRService service=new SQRService();
         //int expected=3;
-        int actual=service.calcSqrt(bottom_border,top_border);
+        int actual=service.calcSqrt(bottomBorder,topBorder);
         Assertions.assertEquals(expected,actual);
     }
     //@Test

@@ -1,12 +1,12 @@
 package ru.netology.sqr.javamavn.services;
 
 public class SQRService {
-    public int calcSqrt(int bottom_border, int top_border) {
+    public int calcSqrt(int bottomBorder, int topBorder) {
         int counter = 0;
 
         for (int i = 10; i < 100; i++) {
 
-            if (bottom_border <= Math.pow(i, 2) && top_border >= Math.pow(i, 2)) {
+            if (bottomBorder <= Math.pow(i, 2) && topBorder >= Math.pow(i, 2)) {
                 counter++;
             }
 
